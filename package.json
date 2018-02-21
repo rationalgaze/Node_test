@@ -1,0 +1,23 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "test node js",
+  "main": "express_test.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rationalgaze/Node_test.git"
+  },
+  "keywords": [
+    "node",
+    "test"
+  ],
+  "author": "Nikolai Vorotnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rationalgaze/Node_test/issues"
+  },
+  "homepage": "https://github.com/rationalgaze/Node_test#readme"
+}
