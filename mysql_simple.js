@@ -13,9 +13,9 @@ function exec(sql,next) {
     
     connection = mysql.createConnection({
         host: "localhost",
-        user: "essai",
-        password: "essai",
-        database: 'essai'
+        user: "username",
+        password: "password",
+        database: 'dbjee'
     });
 
     connection.query(sql, function (err, res) {

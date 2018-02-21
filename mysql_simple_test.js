@@ -2,7 +2,7 @@
 var util = require('util');
 var sql = require("./mysql_simple.js");
 
-sql.exec("select * from essai",afficher);
+sql.exec("select * from t_livre",afficher);
 
 function afficher(lst) {
     console.log("afficher");
@@ -11,7 +11,7 @@ function afficher(lst) {
     }
     else {
         for (var i=0 ; i<lst.length ; i++) {
-            console.log("id = "+lst[i].id+" v1 = "+lst[i].v1+" v2 = "+lst[i].v2);
+            console.log("id = "+lst[i].idLivre+" v1 = "+lst[i].titre+" v2 = "+lst[i].auteur);
         }
     }
 }
