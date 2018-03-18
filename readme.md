@@ -1,4 +1,4 @@
-# Node JS test project
+# Node JS project
 
 npm init
 

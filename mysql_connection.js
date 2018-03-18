@@ -3,10 +3,8 @@ var util = require('util');
 var mysql = require('mysql');
 
 module.exports = {
-    exec,
+  exec,
 }
-
-
 
 function exec(sql,next) {
     var connection = null;
@@ -15,16 +13,16 @@ function exec(sql,next) {
         host: "localhost",
         user: "username",
         password: "password",
-        database: 'dbjee'
+        database: 'log_users'
     });
 
     connection.query(sql, function (err, res) {
         connection.end();
         if (err) {
-            next(null);
+          throw err;
         }
         else {
-            next(res);
+          next(res);
         }
     });
 }
